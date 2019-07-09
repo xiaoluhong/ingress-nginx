@@ -19,7 +19,7 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-export NGINX_VERSION=1.15.6
+export NGINX_VERSION=1.16.0
 export NDK_VERSION=0.3.1rc1
 export SETMISC_VERSION=0.32
 export MORE_HEADERS_VERSION=0.33
