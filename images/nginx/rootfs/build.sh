@@ -149,7 +149,7 @@ mkdir --verbose -p "$BUILD_PATH"
 cd "$BUILD_PATH"
 
 # download, verify and extract the source files
-get_src a3d8c67c2035808c7c0d475fffe263db8c353b11521aa7ade468b780ed826cc6 \
+get_src 4fd376bad78797e7f18094a00f0f1088259326436b537eb5af69b01be2ca1345 \
         "https://nginx.org/download/nginx-$NGINX_VERSION.tar.gz"
 
 get_src 49f50d4cd62b166bc1aaf712febec5e028d9f187cedbc27a610dfd01bdde2d36 \
