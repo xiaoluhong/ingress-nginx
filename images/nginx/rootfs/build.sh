@@ -134,10 +134,8 @@ function geoip2_get {
   mkdir $GEOIP_FOLDER/$1 && tar xf $GEOIP_FOLDER/$1.tar.gz -C $GEOIP_FOLDER/$1 --strip-components 1 && mv $GEOIP_FOLDER/$1/$1.mmdb $GEOIP_FOLDER/$1.mmdb && rm -rf $GEOIP_FOLDER/$1
 }
 
-geoip_get "GeoIPASNum.dat.gz"  "http://download.maxmind.com/download/geoip/database/asnum/GeoIPASNum.dat.gz"
-geoip_get "GeoIP.dat.gz"       "https://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz"
-geoip_get "GeoLiteCity.dat.gz" "https://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz"
-geoip2_get "GeoLite2-City"     "http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz"
+geoip2_get "GeoLite2-Country" "https://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz"
+geoip2_get "GeoLite2-City"     "https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz" 
 geoip2_get "GeoLite2-ASN"      "http://geolite.maxmind.com/download/geoip/database/GeoLite2-ASN.tar.gz"
 
 if [[ (${ARCH} == "ppc64le") ]]; then
